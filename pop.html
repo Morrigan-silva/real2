@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pop.css">
+    <title>popup</title>
+</head>
+<body>
+
+    <h1>Verificar Família do Elemento</h1>
+    <p>Digite o número atômico do elemento:</p>
+    <input type="text" id="numeroAtomico">
+    <button onclick="verificarFamilia()">Verificar</button>
+    <p id="resultado"></p>
+ 
+
+    <script>
+        function verificarFamilia() {
+            var numeroAtomico = parseInt(document.getElementById("numeroAtomico").value);
+            var familia = "";
+
+            if (numeroAtomico === 1 || numeroAtomico === 3 || numeroAtomico === 11 || numeroAtomico === 19 || numeroAtomico === 37 || numeroAtomico === 55 || numeroAtomico === 87) {
+                familia = "Família 1: Metais Alcalinos";
+            } else if (numeroAtomico === 4 || numeroAtomico === 12 || numeroAtomico === 20 || numeroAtomico === 38 || numeroAtomico === 56 || numeroAtomico === 88) {
+                familia = "Família 2: Metais Alcalino-terrosos";
+            } else if (numeroAtomico === 5 || numeroAtomico === 13 || numeroAtomico === 31 || numeroAtomico === 49 || numeroAtomico === 81) {
+                familia = "Família 3: Família do Boro";
+            } else if (numeroAtomico === 6 || numeroAtomico === 14 || numeroAtomico === 32 || numeroAtomico === 50 || numeroAtomico === 82) {
+                familia = "Família 4: Família do Carbono";
+            } else if (numeroAtomico === 7 || numeroAtomico === 15 || numeroAtomico === 33 || numeroAtomico === 51 || numeroAtomico === 83) {
+                familia = "Família 5: Família do Nitrogênio";
+            } else if (numeroAtomico === 8 || numeroAtomico === 16 || numeroAtomico === 34 || numeroAtomico === 52 || numeroAtomico === 84) {
+                familia = "Família 6: Família do Oxigênio";
+            } else if (numeroAtomico === 9 || numeroAtomico === 17 || numeroAtomico === 35 || numeroAtomico === 53 || numeroAtomico === 85) {
+                familia = "Família 7: Halogênios";
+            } else if (numeroAtomico === 2 || numeroAtomico === 10 || numeroAtomico === 18 || numeroAtomico === 36 || numeroAtomico === 54 || numeroAtomico === 86) {
+                familia = "Família 8: Gases Nobres";
+            } else if (numeroAtomico === 21 || numeroAtomico === 39 || numeroAtomico === 71 || numeroAtomico === 103) {
+                familia = "Família 3b";
+            } else if (numeroAtomico === 22 || numeroAtomico === 40 || numeroAtomico === 72 || numeroAtomico === 104) {
+                familia = "Família 4b";
+            } else if (numeroAtomico === 23 || numeroAtomico === 41 || numeroAtomico === 73 || numeroAtomico === 105) {
+                familia = "Família 5b";
+            } else if (numeroAtomico === 24 || numeroAtomico === 42 || numeroAtomico === 74 || numeroAtomico === 106) {
+                familia = "Família 6b";
+            } else if (numeroAtomico === 25 || numeroAtomico === 43 || numeroAtomico === 75 || numeroAtomico === 107) {
+                familia = "Família 7b";
+            } else if (numeroAtomico === 26 || numeroAtomico === 44 || numeroAtomico === 76 || numeroAtomico === 108 || numeroAtomico === 27 || numeroAtomico === 45 || numeroAtomico === 77 || numeroAtomico === 109 || numeroAtomico === 28 || numeroAtomico === 46 || numeroAtomico === 78 || numeroAtomico === 110) {
+                familia = "Família 8b";
+            } else if (numeroAtomico === 29 || numeroAtomico === 47 || numeroAtomico === 79 || numeroAtomico === 111) {
+                familia = "Família 1b";
+            } else if (numeroAtomico === 30 || numeroAtomico === 48 || numeroAtomico === 80 || numeroAtomico === 112) {
+                familia = "Família 2b";
+            } else {
+                familia = "Número atômico inválido.";
+            }
+
+            document.getElementById("resultado").innerHTML = familia;
+        }
+    </script>
+
+</body>
+</html>

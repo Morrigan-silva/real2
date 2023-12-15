@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titan One', cursive;
+}
+
+/*estilo da letra*/
+@import url('https://fonts.googleapis.com/css2?family= Titan +One & display=swap');
+/* font-family: 'Titan One', cursive; */
+
+/*deslizamento lizo*/
+html{
+    scroll-behavior: smooth;
+}
+
+.inicio{
+    background-color: aquamarine;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 15%;
+    border-radius: 25px;
+    align-items: center; /*para centralizar verticalmente*/
+}
+
+.cont{
+    background-color:white;
+    width: 450px;
+    height: 60%;
+    border-radius: 25px;
+    margin-top: 1%;
+    margin-right: 3%;
+    margin-left: 5%;
+}
+
+.tex{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 30px;
+}
+
+.but{
+    width: 25%;
+    height: 10%;
+    background-color: white;
+    border-radius: 15px;
+}
